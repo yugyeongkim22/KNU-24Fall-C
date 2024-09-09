@@ -3,6 +3,7 @@
 int main()
 {
 	printf("Hello, World\n");
-	printf("안녕");
+	printf("첫 프로젝트");
+
 	return 0;
 }
