@@ -3,7 +3,7 @@
 int main()
 {
 	printf("Hello, World\n");
-	printf("ù ������Ʈ");
+	printf("Ã¹ ÇÁ·ÎÁ§Æ®");
 
 	return 0;
 }
