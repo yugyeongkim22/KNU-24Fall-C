@@ -1,25 +1,24 @@
 #include <stdio.h>
 
 
-int factorial(int n) {
-    if (n == 0 || n == 1) {
-        return 1;  
-    }
-    else {
-        return n * factorial(n - 1); 
-    }
-}
+int fact(int num);
 
+int main()
+{
+	int num;
+	scanf_s("%d", &num);
 
-int main() {
-    int number;
+	int result = fact(num);
+	printf("result=%d\n", result);
+	return 0;
+}int fact(int num)
+{
+	int res;
+	if (num == 0 || num == 1) {
+		res = 1;
+		return res;
+	}
 
-   
-    printf("계산할 팩토리얼 값 입력: ");
-    scanf_s("%d", &number);
-
-  
-    printf("%d! = %d\n", number, factorial(number));
-
-    return 0;
+	res = num * fact(num - 1);
+	return res;
 }
